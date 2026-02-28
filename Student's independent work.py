@@ -18,7 +18,6 @@ def main():
     print(f"Зашифрованный вид: {encrypted}")
     decrypted = caesar_cipher(encrypted, shift_key, 'decrypt')
     print(f"Расшифрованный вид: {decrypted}")
-
 if __name__ == "__main__":
-
     main()
+
