@@ -11,13 +11,14 @@ def caesar_cipher(text, shift, mode='encrypt'):
     return result
 
 def main():
-    print("--- Система защиты данных MedicalCard ---")
+    print("Система защиты данных MedicalCard")
     user_password = input("Введите ваш пароль: ")
-    shift_key = 5 #секретный ключ
+    shift_key = 5 #секретный ключ сдвига 
     encrypted = caesar_cipher(user_password, shift_key, 'encrypt')
     print(f"Зашифрованный вид: {encrypted}")
     decrypted = caesar_cipher(encrypted, shift_key, 'decrypt')
     print(f"Расшифрованный вид: {decrypted}")
 
 if __name__ == "__main__":
+
     main()
